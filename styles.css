@@ -1,0 +1,56 @@
+.image-overlay {
+  height: 500px;
+  position: relative;
+}
+
+.image-overlay:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrapper a {
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+
+.select-coach-img{
+  height: 300px;
+  object-fit: cover;
+}
+
+.fc-day-selected {
+  background-color: #007bff;
+  color: white;
+}
