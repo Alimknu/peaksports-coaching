@@ -10,14 +10,14 @@ const displayCoaches = (coaches) => {
   let html = "";
   coaches.forEach((coach, index) => {
     if (index % 3 === 0) {
-      html += '<div class="row">';
+      html += '<div class="row under-card">';
     }
     html += `
     <div class="col-md-4"> 
         <div class="card"> 
             <img src="${coach.image}" alt="${coach.name}" class="card-img-top">
             <div class="card-body">
-                <h2 class="card-title">${coach.name}</h2>
+                <h2 class="card-title green-text">${coach.name}</h2>
                 <p class="card-text">${coach.game}</p>
                 <p class="card-text">Rate: ${coach.rate}</p>
                 <a href="booking.html" class="btn btn-primary">Book a Session</a>

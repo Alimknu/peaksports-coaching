@@ -12,7 +12,16 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Peaksports Coaching</a>
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="img/peaksportscoaching.jpg"
+            alt="peaksportscoaching"
+            width="40"
+            height="40"
+            class="d-inline-block align-top me-2"
+          />
+          Peaksports Coaching
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,20 +48,20 @@
 
     <section class="container mt-5">
       <div class="mb-3">
-        <label for="coach" class="form-label">Select a Coach:</label>
-        <select id="coach" class="form-control">
+        <label for="coach" class="form-label green-text">Select a Coach:</label>
+        <select id="coach" class="form-select">
           <option value="" selected disabled>Select a coach</option>
         </select>
       </div>
       <div id="coach-info" class="row mt-4"></div>
       <div id="calendar-and-form">
         <div class="mb-3">
-          <label for="date" class="form-label">Select a Date:</label>
+          <label for="date" class="form-label green-text">Select a Date:</label>
           <input type="date" id="date" class="form-control" />
         </div>
         <div class="mb-3">
-          <label for="time" class="form-label">Select a Time:</label>
-          <select id="time" class="form-control">
+          <label for="time" class="form-label green-text">Select a Time:</label>
+          <select id="time" class="form-select">
             <option value="09:00">9:00 AM</option>
             <option value="10:00">10:00 AM</option>
             <option value="11:00">11:00 AM</option>
@@ -68,11 +77,11 @@
       <div id="user-info" class="mt-4">
         <div class="row mb-3">
           <div class="col-md-6">
-            <label for="name" class="form-label">Name</label>
+            <label for="name" class="form-label green-text">Name</label>
             <input type="text" id="name" class="form-control" />
           </div>
           <div class="col-md-6">
-            <label for="email" class="form-label">Email</label>
+            <label for="email" class="form-label green-text">Email</label>
             <input type="email" id="email" class="form-control" />
           </div>
         </div>

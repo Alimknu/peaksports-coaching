@@ -25,13 +25,13 @@ coachDropdown.addEventListener("change", function () {
         <div class="col-md-8">
           <div class="row">
             <div class="col-md-6">
-              <h5>${selectedCoach.name}</h5>
-              <p>${selectedCoach.game}</p>
-              <p>${selectedCoach.languages.join(", ")}</p>
+              <h5 class="green-text">${selectedCoach.name}</h5>
+              <p class="green-text">Game: ${selectedCoach.game}</p>
+              <p class="green-text">Language(s): ${selectedCoach.languages.join(", ")}</p>
             </div>
             <div class="col-md-6">
-              <p>Rating: ${selectedCoach.rating}</p>
-              <p>Rate: ${selectedCoach.rate}</p>
+              <p class="green-text">Rating: ${selectedCoach.rating}</p>
+              <p class="green-text">Rate: ${selectedCoach.rate}</p>
             </div>
           </div>
         </div>

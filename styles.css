@@ -1,3 +1,48 @@
+.navbar {
+  background-color: #000000 !important;
+  padding: 10px;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #6aff00 !important;
+  margin-right: 200px;
+}
+
+.navbar-toggler-icon {
+  background-color: #6aff00;
+  padding: 5px;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+.btn-primary,
+.btn:disabled {
+  background-color: #6aff00;
+  border-color: #6aff00;
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background-color: #59d600;
+  border-color: #59d600;
+  color: #000000;
+}
+
+.card-body,
+.form-select,
+.form-control,
+.select-coach-img {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body {
+  background-color: #1a1a1a;
+}
+
 .image-overlay {
   height: 500px;
   position: relative;
@@ -45,7 +90,7 @@
   object-fit: cover;
 }
 
-.select-coach-img{
+.select-coach-img {
   height: 300px;
   object-fit: cover;
 }
@@ -53,4 +98,41 @@
 .fc-day-selected {
   background-color: #007bff;
   color: white;
+}
+
+.green-text {
+  color: #6aff00;
+}
+
+.black-box{
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.gray-box{
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h5 {
+  font-size: 2em;
+}
+
+.form-control[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.form-control[type="date"]:focus::-webkit-calendar-picker-indicator {
+  filter: none;
+}
+
+.form-select:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.under-card{
+  padding-bottom: 20px;
 }
