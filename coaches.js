@@ -6,6 +6,10 @@ export const coaches = [
     image: "img/faker.png",
     rating: "5 stars",
     languages: ["Korean", "English"],
+    stats: {
+      winRate: "78%",
+      tournamentsWon: 35,
+    },
   },
   {
     name: "Tenz",
@@ -14,6 +18,10 @@ export const coaches = [
     image: "img/tenz.png",
     rating: "4.8 stars",
     languages: ["English"],
+    stats: {
+      winRate: "70%",
+      tournamentsWon: 20,
+    },
   },
   {
     name: "K3Soju",
@@ -22,7 +30,12 @@ export const coaches = [
     image: "img/k3soju.png",
     rating: "4 stars",
     languages: ["English"],
+    stats: {
+      winRate: "65%",
+      tournamentsWon: 10,
+    },
   },
+
   {
     name: "Puppey",
     game: "Dota 2",
@@ -30,6 +43,10 @@ export const coaches = [
     image: "img/puppey.png",
     rating: "4.5 stars",
     languages: ["Russian", "English"],
+    stats: {
+      winRate: "75%",
+      tournamentsWon: 25,
+    },
   },
   {
     name: "Coldzera",
@@ -38,6 +55,10 @@ export const coaches = [
     image: "img/coldzera.png",
     rating: "4.7 stars",
     languages: ["Portuguese", "English"],
+    stats: {
+      winRate: "73%",
+      tournamentsWon: 18,
+    },
   },
   {
     name: "Armada",
@@ -46,6 +67,10 @@ export const coaches = [
     image: "img/armada.jpg",
     rating: "4.5 stars",
     languages: ["Swedish", "English"],
+    stats: {
+      winRate: "77%",
+      tournamentsWon: 22,
+    },
   },
   {
     name: "Scump",
@@ -54,6 +79,10 @@ export const coaches = [
     image: "img/scump.png",
     rating: "4.5 stars",
     languages: ["English"],
+    stats: {
+      winRate: "72%",
+      tournamentsWon: 15,
+    },
   },
   {
     name: "Forest",
@@ -62,6 +91,10 @@ export const coaches = [
     image: "img/forest.jpg",
     rating: "4.6 stars",
     languages: ["Swedish", "English"],
+    stats: {
+      winRate: "74%",
+      tournamentsWon: 20,
+    },
   },
   {
     name: "Huni",
@@ -70,5 +103,9 @@ export const coaches = [
     image: "img/huni.png",
     rating: "4.5 stars",
     languages: ["Korean", "English"],
+    stats: {
+      winRate: "68%",
+      tournamentsWon: 15,
+    },
   },
 ];

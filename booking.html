@@ -54,42 +54,52 @@
         </select>
       </div>
       <div id="coach-info" class="row mt-4"></div>
-      <div id="calendar-and-form">
+      <div id="booking-form">
         <div class="mb-3">
-          <label for="date" class="form-label green-text">Select a Date:</label>
-          <input type="date" id="date" class="form-control" />
+          <label class="form-label green-text" id="select-dates-and-times">Select Dates and Times:</label>
+          <div id="date-time-container">
+            <div class="date-time-group">
+              <input type="date" class="form-control mb-2" />
+              <select class="form-select mb-2">
+                <option value="09:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="15:00">3:00 PM</option>
+                <option value="16:00">4:00 PM</option>
+              </select>
+              <button type="button" class="btn btn-danger mb-2 remove-date-time-btn">Remove</button>
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary mt-2" id="add-date-time-btn">Add Another Date and Time</button>
         </div>
-        <div class="mb-3">
-          <label for="time" class="form-label green-text">Select a Time:</label>
-          <select id="time" class="form-select">
-            <option value="09:00">9:00 AM</option>
-            <option value="10:00">10:00 AM</option>
-            <option value="11:00">11:00 AM</option>
-            <option value="12:00">12:00 PM</option>
-            <option value="13:00">1:00 PM</option>
-            <option value="14:00">2:00 PM</option>
-            <option value="15:00">3:00 PM</option>
-            <option value="16:00">4:00 PM</option>
-          </select>
+
+        <div id="user-info" class="mt-4">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label green-text">Name</label>
+              <input type="text" id="name" class="form-control" />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label green-text">Email</label>
+              <input type="email" id="email" class="form-control" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <button id="submit-button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div id="user-info" class="mt-4">
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="name" class="form-label green-text">Name</label>
-            <input type="text" id="name" class="form-control" />
-          </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label green-text">Email</label>
-            <input type="email" id="email" class="form-control" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <button id="submit-button" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
+      <div id="confirmation-message" class="mt-4" style="display: none">
+        <h5 class="green-text">Booking Confirmed!</h5>
+        <p class="green-text">
+          Thank you, <span id="confirmation-name"></span>! Your booking has been confirmed. Here are the details:
+        </p>
+        <ul id="confirmation-details"></ul>
       </div>
     </section>
   </body>

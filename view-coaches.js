@@ -20,6 +20,8 @@ const displayCoaches = (coaches) => {
                 <h2 class="card-title green-text">${coach.name}</h2>
                 <p class="card-text">${coach.game}</p>
                 <p class="card-text">Rate: ${coach.rate}</p>
+                <p class="card-text">Win Rate: ${coach.stats.winRate}</p>
+                <p class="card-text">Tournaments Won: ${coach.stats.tournamentsWon}</p>
                 <a href="booking.html" class="btn btn-primary">Book a Session</a>
             </div>
         </div>
